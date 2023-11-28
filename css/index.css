@@ -1,0 +1,29 @@
+:root {
+    --bg-color: #162929;
+    --font-color: #efefef;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: 'Barlow Condensed';
+}
+
+.title {
+    text-align: center;
+    background-color: #121212;
+    letter-spacing: 4px;
+    font-size: 2em;
+    padding: .15em;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-text-sub {
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
