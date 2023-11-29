@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 100vh;
     background-color: var(--bg-color);
     color: var(--font-color);
     font-family: 'Barlow Condensed';
@@ -13,7 +14,7 @@ body {
     text-align: center;
     background-color: #121212;
     letter-spacing: 4px;
-    font-size: 2em;
+    font-size: 3em;
     padding: .15em;
 }
 
@@ -26,4 +27,58 @@ body {
     font-size: 13px;
     font-weight: 200;
     letter-spacing: 1px;
+}
+
+main {
+    display: flex;
+    padding: 2em;
+}
+
+.images {
+    width: 50%;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.resume {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    font-size: 2em;
+}
+
+.resume-title {
+    padding-bottom: .4em;
+}
+
+.resume-text {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images {
+        display: none;
+    }
+
+    .resume {
+        background-image: url('../images/restaurant.jpg');
+        background-repeat: no-repeat;
+
+        width: 100%;
+        padding: 0;
+    }
+
 }
